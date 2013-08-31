@@ -17,7 +17,7 @@ Home page of the {{ SITENAME|striptags }} blog.
 
     <div class="row-fluid">
         {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.details %}
-        <div class="span8">
+        <div class="span4">
             <header>
             <h1 id="about-me">About me</h1>
             </header>
@@ -31,6 +31,7 @@ Home page of the {{ SITENAME|striptags }} blog.
         <div class="span4">
             <header>
             <h1 id="my-projects">My Projects</h1>
+			</header>
             {% for project in PROJECTS %}
             <ul class="list-all-articles">
                 <li>
@@ -40,6 +41,15 @@ Home page of the {{ SITENAME|striptags }} blog.
             {%endfor %}
         </div>
         {% endif %}
+		
+        <div class="span4">
+			<header>
+            <h1>Recent Comments</h1>
+			</header>
+            <div id="recentcomments" class="dsq-widget">
+				<script type="text/javascript" src="http://{{ DISQUS_SITENAME }}.disqus.com/recent_comments_widget.js?num_items=6&amp;hide_avatars=0&amp;avatar_size=24&amp;excerpt_length=200"></script>
+			</div>
+        </div>
     </div>
 
     {% if articles %}
