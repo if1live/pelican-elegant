@@ -132,14 +132,14 @@ ul.articles-in-tag li {
 /* Article */
 
 article p a {
-    color:black;
-    border-bottom:0.5px dashed darkblue;
+    /*color:black;*/
+    border-bottom:1px dashed darkblue;
 }
 
 article p a:hover {
     text-shadow:none;
     text-decoration:none;
-    border-bottom:none;
+    border-bottom:1px dashed blue;
 }
 
 .article-content {
@@ -370,7 +370,7 @@ img {
 }
 .last_updated a {
      color: black;
-     border-bottom: 0.5px dashed darkblue;
+     border-bottom: 1px dashed darkblue;
 }
 .last_updated a:hover {
      text-shadow: none;
