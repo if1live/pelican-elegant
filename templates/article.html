@@ -185,10 +185,6 @@
 {% endblock content %}
 
 {% block script %}
-<<<<<<< HEAD
-{{ super() }}
-{% include 'disqus_script_count.html' %}
-=======
     {{ super() }}
     {% include 'disqus_script_count.html' %}
     {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
@@ -209,5 +205,4 @@
             uncollapse(); 
         </script>
     {% endif %}
->>>>>>> talha131/master
 {% endblock script %}
